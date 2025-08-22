@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-:root{ --health-core:#18051E; --light-balance:#E8CDFF; --peak-performance:#FF482C; --restorative-yellow:#FBF999; }
-html, body { height:100%; }
-body { @apply bg-health-core text-light-balance font-body; }
-* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
