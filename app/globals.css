@@ -1,3 +1,34 @@
+/* Brand fonts (CSS @font-face, safe for all builds) */
+@font-face {
+  font-family: "National 2 Narrow";
+  src: url("/fonts/national-2-narrow-medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("/fonts/PPMori-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
+  src: url("/fonts/PPMori-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Wire them to the same CSS variables we already use */
+:root {
+  --font-heading: "National 2 Narrow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body:    "PP Mori", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Our tailwind classes already reference these vars */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
